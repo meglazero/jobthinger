@@ -38,7 +38,7 @@ header nav a {
 }
 
 .hero {
-    background-image: url(src/img/hero.png);
+    background-image: url(./src/img/hero.png);
     background-size: cover;
     background-position-y: 80%;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ header nav a {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(src/img/space.png);
+    background-image: url(./src/img/space.png);
     background-repeat: repeat;
     height: 100%;
     width: 100%;
@@ -104,7 +104,7 @@ h1 .title {
 }
 
 .history{
-    background-image: url(src/img/bg1.png);
+    background-image: url(./src/img/bg1.png);
     background-size: cover;
     background-position-y: 80%;
     background-repeat: no-repeat;
@@ -234,7 +234,7 @@ h1 .title {
 .mtn1{
     position: relative;
     position: relative;
-    background-image: url(src/img/bg2.png);
+    background-image: url(./src/img/bg2.png);
     height: 700px;
     background-size: cover;
     background-position-y: 80%;
@@ -246,7 +246,7 @@ h1 .title {
 
 .mtn2{
     position: relative;
-    background-image: url(src/img/bg3.png);
+    background-image: url(./src/img/bg3.png);
     height: 700px;
     background-size: cover;
     background-position-y: 80%;
@@ -273,6 +273,10 @@ h1 .title {
     display: grid;
     grid-template: 25% 25% 25% 25% / 50% 50%;
     align-content: center;
+}
+
+#none{
+    display: none;
 }
 
 
