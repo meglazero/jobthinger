@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header,
+.sticky,
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav,
+.linkbox {
+    padding-top: 15px;
+}
+
+.linkbox{
+    margin: 0;
+}
+
+header nav a {
+    padding: 1em 1em;
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: .8em;
+    z-index: 100;
+}
+
+.logo2,
+.logo {
+    padding-top: 5px;
+    height: 30px;
+}
+
+.hero {
+    background-image: url(src/img/hero.png);
+    background-size: cover;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    height: 1500px;
+    position: relative;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(src/img/space.png);
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 10%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.problem {
+    position: absolute;
+    top: 20rem;
+    opacity: 50%;
+    width: 100%;
+    height: calc(100% - 20rem);
+}
+
+h1 {
+    position: absolute;
+    top: 3em;
+    left: 5em;
+    display: flex;
+    flex-direction: column;
+    color: rgba(64, 79, 108, .95);
+    font-size: 4em;
+    line-height: .8em;
+    letter-spacing: .06em;
+}
+
+h1 .title {
+    letter-spacing: 0px;
+    font-size: inherit;
+    color: rgba(77, 77, 77, .95);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 0;
+    background: transparent;
+    z-index: 100;
+}
+
+.linkbox a {
+    padding: 1em 1em;
+    color: rgba(120, 120, 120, .9);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.history{
+    background-image: url(src/img/bg1.png);
+    background-size: cover;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+.box{
+    width: 70%;
+    padding-top: 12em;
+    margin: 0 auto;
+    height: 800px;
+}
+
+.box .title{
+    position: relative;
+    font-size: 1.7em;
+    padding-left: 3em;
+    color: rgba(54, 67, 90, 1);
+}
+
+.number{
+    position: absolute;
+    top: -2.3rem;
+    left: -.6rem;
+    font-size: 3em;
+    letter-spacing: -3px;
+    color: rgba(97, 108, 127, .95);
+}
+
+.title p {
+    position: absolute;
+    top: 2.8em;
+    left: 3em;
+    color: rgba(54, 67, 90, 1);
+}
+
+.team{
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    background-color: rgba(97, 117, 158, .7);
+    z-index: -3;
+}
+
+.teambox {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel {
+    flex: 1;
+    position: relative;
+}
+
+.one{
+    position: absolute;
+    bottom: calc(50% - 12rem);
+    left: calc(50% - 12rem);
+    z-index: 1;
+}
+
+.two{
+    position: absolute;
+    top: calc(50% + 7rem);
+    left: calc(50% - 3rem);
+    z-index: -1;
+}
+
+.title__two {
+    position: relative;
+    font-size: 1.7em;
+    padding-left: 3em;
+    color: rgba(54, 67, 90, 1);
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.title__two p {
+    top: -2em;
+    width: 60%;
+    margin-top: -1em;
+    margin-left: 2em;
+    font-size: .5em;
+}
+
+.climb .box {
+    width: 100%;
+    position: relative;
+}
+
+.box nav{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.climb .box::before {
+    content: '';
+    position: absolute;
+    top:20rem;
+    left:0;
+    width: 100%;
+    height: 43px;
+    background-color: rgba(75, 92, 116, .95);
+}
+
+.climb .box nav {
+    display: flex;
+}
+
+.btn {
+    margin-top: -.2rem;
+    padding: 22px;
+    color: rgba(160, 168, 178, 1);
+    font-size: 1.4em;
+}
+
+#selected{
+    background-color: rgba(160, 168, 178, 1);
+    color: rgb(43, 61, 87);
+}
+
+.mtn1{
+    position: relative;
+    position: relative;
+    background-image: url(src/img/bg2.png);
+    height: 700px;
+    background-size: cover;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    margin-top: -1.7em;
+    z-index: -1;
+}
+
+.mtn2{
+    position: relative;
+    background-image: url(src/img/bg3.png);
+    height: 700px;
+    background-size: cover;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    margin-top: -1.7em;
+    z-index: -1;
+}
+
+.sched__title{
+    position: absolute;
+    top: 15%;
+    left: calc(30% + 1em);
+    width: 30%;
+    font-size: 3em;
+}
+
+.schedule{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 30%;
+    padding: 4em 2em 2em 2em;
+    display: grid;
+    grid-template: 25% 25% 25% 25% / 50% 50%;
+    align-content: center;
+}
+
+
+footer {
+    background-color: rgba(64, 79, 108, 1);
+    height: 100%;
+    padding: 10px;
+}
+
+footer .logo{
+    height: auto;
+    display: flex;
+}
+
+.logo h2 {
+    display: flex;
+    flex-direction: column;
+    color: rgba(97, 117, 158, 1);
+    padding-left: 1em;
+}
+
+.copyright{
+    color: rgba(97, 117, 158, .98);
+    margin: auto 0;
+}
